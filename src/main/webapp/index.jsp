@@ -197,7 +197,7 @@
                         <div class="label" data-i18n="hero.stat.campaigns">Campaigns</div>
                     </div>
                     <div class="hero-stat-item">
-                        <div class="value" data-prefix="₹" data-count="50000000" data-suffix="+">₹5Cr+</div>
+                        <div class="value" data-prefix="₹" data-count="5" data-suffix="Cr+">₹5Cr+</div>
                         <div class="label" data-i18n="hero.stat.paid">Paid Out</div>
                     </div>
                 </div>

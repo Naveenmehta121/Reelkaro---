@@ -1,7 +1,7 @@
 /**
- * ReelKaro — main.js
+ * ReelKaro \u2014 main.js
  * Handles:
- *  1. Language toggle (Hindi ↔ English) with a JS translation map
+ *  1. Language toggle (Hindi \u2194 English) with a JS translation map
  *  2. Client-side form validation
  *  3. WhatsApp share button generation
  *  4. Animated stats counter on the landing page
@@ -31,12 +31,12 @@ const translations = {
     "nav.logout":       "Logout",
 
     // Hero
-    "hero.eyebrow":     "🇮🇳 India's #1 Creator Marketplace",
+    "hero.eyebrow":     "\u{1f1ee}\u{1f1f3} India's #1 Creator Marketplace",
     "hero.title.part1": "Where Brands Meet",
     "hero.title.part2": "India's Creators",
     "hero.desc":        "Post campaigns. Apply as a creator. Earn real money in INR. ReelKaro connects brands with Instagram, YouTube, Josh & ShareChat creators across India.",
-    "hero.cta.brand":   "I'm a Brand →",
-    "hero.cta.creator": "I'm a Creator →",
+    "hero.cta.brand":   "I'm a Brand \u2192",
+    "hero.cta.creator": "I'm a Creator \u2192",
     "hero.stat.creators": "Creators",
     "hero.stat.brands":   "Brands",
     "hero.stat.campaigns":"Campaigns",
@@ -51,11 +51,11 @@ const translations = {
     "how.brand.step3":    "Approve content & reward creators",
     "how.creator.step1":  "Browse open campaigns",
     "how.creator.step2":  "Apply & get approved",
-    "how.creator.step3":  "Post content & earn ₹₹₹",
+    "how.creator.step3":  "Post content & earn \u20b9\u20b9\u20b9",
 
     // Common buttons
     "btn.apply":        "Apply Now",
-    "btn.applied":      "Applied ✓",
+    "btn.applied":      "Applied \u2713",
     "btn.view":         "View Details",
     "btn.share":        "Share on WhatsApp",
     "btn.submit":       "Submit Content",
@@ -112,8 +112,8 @@ const translations = {
     "form.desc":            "Description",
     "form.platform":        "Platform",
     "form.category":        "Category",
-    "form.budget":          "Total Budget (₹)",
-    "form.reward":          "Reward per Creator (₹)",
+    "form.budget":          "Total Budget (\u20b9)",
+    "form.reward":          "Reward per Creator (\u20b9)",
     "form.max":             "Max Creators",
     "form.deadline":        "Application Deadline",
     "form.content.link":    "Content URL / Post Link",
@@ -128,7 +128,7 @@ const translations = {
     "no.rewards":         "No rewards yet.",
     "filter.platform":    "Filter by Platform",
     "filter.category":    "Filter by Category",
-    "filter.min.reward":  "Min Reward (₹)",
+    "filter.min.reward":  "Min Reward (\u20b9)",
     "filter.sort":        "Sort By",
     "sort.newest":        "Newest First",
     "sort.highest":       "Highest Reward",
@@ -143,128 +143,128 @@ const translations = {
 
   hi: {
     // Navbar
-    "nav.home":         "होम",
-    "nav.browse":       "अभियान देखें",
-    "nav.login":        "लॉगिन",
-    "nav.register":     "रजिस्टर",
-    "nav.dashboard":    "डैशबोर्ड",
-    "nav.campaigns":    "मेरे अभियान",
-    "nav.post":         "अभियान पोस्ट करें",
-    "nav.applications": "आवेदन",
-    "nav.earnings":     "कमाई",
-    "nav.leaderboard":  "लीडरबोर्ड",
-    "nav.profile":      "प्रोफ़ाइल",
-    "nav.logout":       "लॉगआउट",
+    "nav.home":         "\u0939\u094b\u092e",
+    "nav.browse":       "\u0905\u092d\u093f\u092f\u093e\u0928 \u0926\u0947\u0916\u0947\u0902",
+    "nav.login":        "\u0932\u0949\u0917\u093f\u0928",
+    "nav.register":     "\u0930\u091c\u093f\u0938\u094d\u091f\u0930",
+    "nav.dashboard":    "\u0921\u0948\u0936\u092c\u094b\u0930\u094d\u0921",
+    "nav.campaigns":    "\u092e\u0947\u0930\u0947 \u0905\u092d\u093f\u092f\u093e\u0928",
+    "nav.post":         "\u0905\u092d\u093f\u092f\u093e\u0928 \u092a\u094b\u0938\u094d\u091f \u0915\u0930\u0947\u0902",
+    "nav.applications": "\u0906\u0935\u0947\u0926\u0928",
+    "nav.earnings":     "\u0915\u092e\u093e\u0908",
+    "nav.leaderboard":  "\u0932\u0940\u0921\u0930\u092c\u094b\u0930\u094d\u0921",
+    "nav.profile":      "\u092a\u094d\u0930\u094b\u092b\u093c\u093e\u0907\u0932",
+    "nav.logout":       "\u0932\u0949\u0917\u0906\u0909\u091f",
 
     // Hero
-    "hero.eyebrow":     "🇮🇳 भारत का नंबर 1 क्रिएटर मार्केटप्लेस",
-    "hero.title.part1": "ब्रांड्स मिलते हैं",
-    "hero.title.part2": "भारत के क्रिएटर्स से",
-    "hero.desc":        "अभियान पोस्ट करें। क्रिएटर के रूप में अप्लाई करें। INR में असली पैसे कमाएं। ReelKaro ब्रांड्स को Instagram, YouTube, Josh और ShareChat क्रिएटर्स से जोड़ता है।",
-    "hero.cta.brand":   "मैं एक ब्रांड हूँ →",
-    "hero.cta.creator": "मैं एक क्रिएटर हूँ →",
-    "hero.stat.creators": "क्रिएटर्स",
-    "hero.stat.brands":   "ब्रांड्स",
-    "hero.stat.campaigns":"अभियान",
-    "hero.stat.paid":     "भुगतान हुआ",
+    "hero.eyebrow":     "\u{1f1ee}\u{1f1f3} \u092d\u093e\u0930\u0924 \u0915\u093e \u0928\u0902\u092c\u0930 1 \u0915\u094d\u0930\u093f\u090f\u091f\u0930 \u092e\u093e\u0930\u094d\u0915\u0947\u091f\u092a\u094d\u0932\u0947\u0938",
+    "hero.title.part1": "\u092c\u094d\u0930\u093e\u0902\u0921\u094d\u0938 \u092e\u093f\u0932\u0924\u0947 \u0939\u0948\u0902",
+    "hero.title.part2": "\u092d\u093e\u0930\u0924 \u0915\u0947 \u0915\u094d\u0930\u093f\u090f\u091f\u0930\u094d\u0938 \u0938\u0947",
+    "hero.desc":        "\u0905\u092d\u093f\u092f\u093e\u0928 \u092a\u094b\u0938\u094d\u091f \u0915\u0930\u0947\u0902\u0964 \u0915\u094d\u0930\u093f\u090f\u091f\u0930 \u0915\u0947 \u0930\u0942\u092a \u092e\u0947\u0902 \u0905\u092a\u094d\u0932\u093e\u0908 \u0915\u0930\u0947\u0902\u0964 INR \u092e\u0947\u0902 \u0905\u0938\u0932\u0940 \u092a\u0948\u0938\u0947 \u0915\u092e\u093e\u090f\u0902\u0964 ReelKaro \u092c\u094d\u0930\u093e\u0902\u0921\u094d\u0938 \u0915\u094b Instagram, YouTube, Josh \u0914\u0930 ShareChat \u0915\u094d\u0930\u093f\u090f\u091f\u0930\u094d\u0938 \u0938\u0947 \u091c\u094b\u0921\u093c\u0924\u093e \u0939\u0948\u0964",
+    "hero.cta.brand":   "\u092e\u0948\u0902 \u090f\u0915 \u092c\u094d\u0930\u093e\u0902\u0921 \u0939\u0942\u0901 \u2192",
+    "hero.cta.creator": "\u092e\u0948\u0902 \u090f\u0915 \u0915\u094d\u0930\u093f\u090f\u091f\u0930 \u0939\u0942\u0901 \u2192",
+    "hero.stat.creators": "\u0915\u094d\u0930\u093f\u090f\u091f\u0930\u094d\u0938",
+    "hero.stat.brands":   "\u092c\u094d\u0930\u093e\u0902\u0921\u094d\u0938",
+    "hero.stat.campaigns":"\u0905\u092d\u093f\u092f\u093e\u0928",
+    "hero.stat.paid":     "\u092d\u0941\u0917\u0924\u093e\u0928 \u0939\u0941\u0906",
 
     // How it works
-    "how.title":          "ReelKaro कैसे काम करता है",
-    "how.brand.title":    "ब्रांड्स के लिए",
-    "how.creator.title":  "क्रिएटर्स के लिए",
-    "how.brand.step1":    "बजट और आवश्यकताओं के साथ अभियान पोस्ट करें",
-    "how.brand.step2":    "क्रिएटर आवेदनों की समीक्षा करें",
-    "how.brand.step3":    "कंटेंट अप्रूव करें और क्रिएटर को पुरस्कृत करें",
-    "how.creator.step1":  "खुले अभियान ब्राउज़ करें",
-    "how.creator.step2":  "अप्लाई करें और अप्रूव हों",
-    "how.creator.step3":  "कंटेंट पोस्ट करें और ₹₹₹ कमाएं",
+    "how.title":          "ReelKaro \u0915\u0948\u0938\u0947 \u0915\u093e\u092e \u0915\u0930\u0924\u093e \u0939\u0948",
+    "how.brand.title":    "\u092c\u094d\u0930\u093e\u0902\u0921\u094d\u0938 \u0915\u0947 \u0932\u093f\u090f",
+    "how.creator.title":  "\u0915\u094d\u0930\u093f\u090f\u091f\u0930\u094d\u0938 \u0915\u0947 \u0932\u093f\u090f",
+    "how.brand.step1":    "\u092c\u091c\u091f \u0914\u0930 \u0906\u0935\u0936\u094d\u092f\u0915\u0924\u093e\u0913\u0902 \u0915\u0947 \u0938\u093e\u0925 \u0905\u092d\u093f\u092f\u093e\u0928 \u092a\u094b\u0938\u094d\u091f \u0915\u0930\u0947\u0902",
+    "how.brand.step2":    "\u0915\u094d\u0930\u093f\u090f\u091f\u0930 \u0906\u0935\u0947\u0926\u0928\u094b\u0902 \u0915\u0940 \u0938\u092e\u0940\u0915\u094d\u0937\u093e \u0915\u0930\u0947\u0902",
+    "how.brand.step3":    "\u0915\u0902\u091f\u0947\u0902\u091f \u0905\u092a\u094d\u0930\u0942\u0935 \u0915\u0930\u0947\u0902 \u0914\u0930 \u0915\u094d\u0930\u093f\u090f\u091f\u0930 \u0915\u094b \u092a\u0941\u0930\u0938\u094d\u0915\u0943\u0924 \u0915\u0930\u0947\u0902",
+    "how.creator.step1":  "\u0916\u0941\u0932\u0947 \u0905\u092d\u093f\u092f\u093e\u0928 \u092c\u094d\u0930\u093e\u0909\u091c\u093c \u0915\u0930\u0947\u0902",
+    "how.creator.step2":  "\u0905\u092a\u094d\u0932\u093e\u0908 \u0915\u0930\u0947\u0902 \u0914\u0930 \u0905\u092a\u094d\u0930\u0942\u0935 \u0939\u094b\u0902",
+    "how.creator.step3":  "\u0915\u0902\u091f\u0947\u0902\u091f \u092a\u094b\u0938\u094d\u091f \u0915\u0930\u0947\u0902 \u0914\u0930 \u20b9\u20b9\u20b9 \u0915\u092e\u093e\u090f\u0902",
 
     // Common buttons
-    "btn.apply":        "अभी अप्लाई करें",
-    "btn.applied":      "अप्लाई हो गया ✓",
-    "btn.view":         "विवरण देखें",
-    "btn.share":        "WhatsApp पर शेयर करें",
-    "btn.submit":       "कंटेंट सबमिट करें",
-    "btn.save":         "बदलाव सहेजें",
-    "btn.post":         "अभियान पोस्ट करें",
-    "btn.approve":      "अप्रूव करें",
-    "btn.reject":       "रिजेक्ट करें",
-    "btn.pause":        "रोकें",
-    "btn.close":        "बंद करें",
-    "btn.reopen":       "फिर खोलें",
-    "btn.save.upi":     "UPI ID सहेजें",
+    "btn.apply":        "\u0905\u092d\u0940 \u0905\u092a\u094d\u0932\u093e\u0908 \u0915\u0930\u0947\u0902",
+    "btn.applied":      "\u0905\u092a\u094d\u0932\u093e\u0908 \u0939\u094b \u0917\u092f\u093e \u2713",
+    "btn.view":         "\u0935\u093f\u0935\u0930\u0923 \u0926\u0947\u0916\u0947\u0902",
+    "btn.share":        "WhatsApp \u092a\u0930 \u0936\u0947\u092f\u0930 \u0915\u0930\u0947\u0902",
+    "btn.submit":       "\u0915\u0902\u091f\u0947\u0902\u091f \u0938\u092c\u092e\u093f\u091f \u0915\u0930\u0947\u0902",
+    "btn.save":         "\u092c\u0926\u0932\u093e\u0935 \u0938\u0939\u0947\u091c\u0947\u0902",
+    "btn.post":         "\u0905\u092d\u093f\u092f\u093e\u0928 \u092a\u094b\u0938\u094d\u091f \u0915\u0930\u0947\u0902",
+    "btn.approve":      "\u0905\u092a\u094d\u0930\u0942\u0935 \u0915\u0930\u0947\u0902",
+    "btn.reject":       "\u0930\u093f\u091c\u0947\u0915\u094d\u091f \u0915\u0930\u0947\u0902",
+    "btn.pause":        "\u0930\u094b\u0915\u0947\u0902",
+    "btn.close":        "\u092c\u0902\u0926 \u0915\u0930\u0947\u0902",
+    "btn.reopen":       "\u092b\u093f\u0930 \u0916\u094b\u0932\u0947\u0902",
+    "btn.save.upi":     "UPI ID \u0938\u0939\u0947\u091c\u0947\u0902",
 
     // Campaign card labels
-    "card.reward":      "इनाम",
-    "card.deadline":    "अंतिम तिथि",
-    "card.applicants":  "आवेदनकर्ता",
-    "card.platform":    "प्लेटफ़ॉर्म",
-    "card.category":    "श्रेणी",
-    "card.budget":      "कुल बजट",
-    "card.max":         "अधिकतम क्रिएटर",
-    "card.status":      "स्थिति",
+    "card.reward":      "\u0907\u0928\u093e\u092e",
+    "card.deadline":    "\u0905\u0902\u0924\u093f\u092e \u0924\u093f\u0925\u093f",
+    "card.applicants":  "\u0906\u0935\u0947\u0926\u0928\u0915\u0930\u094d\u0924\u093e",
+    "card.platform":    "\u092a\u094d\u0932\u0947\u091f\u092b\u093c\u0949\u0930\u094d\u092e",
+    "card.category":    "\u0936\u094d\u0930\u0947\u0923\u0940",
+    "card.budget":      "\u0915\u0941\u0932 \u092c\u091c\u091f",
+    "card.max":         "\u0905\u0927\u093f\u0915\u0924\u092e \u0915\u094d\u0930\u093f\u090f\u091f\u0930",
+    "card.status":      "\u0938\u094d\u0925\u093f\u0924\u093f",
 
     // Dashboard
-    "dash.welcome":         "वापस स्वागत है",
-    "dash.active.camps":    "सक्रिय अभियान",
-    "dash.total.apps":      "कुल आवेदन",
-    "dash.total.spent":     "कुल खर्च",
-    "dash.approval.rate":   "अप्रूवल दर",
-    "dash.total.earned":    "कुल कमाई",
-    "dash.pending.apps":    "लंबित आवेदन",
-    "dash.approved.subs":   "अप्रूव सबमिशन",
-    "dash.rank":            "लीडरबोर्ड रैंक",
+    "dash.welcome":         "\u0935\u093e\u092a\u0938 \u0938\u094d\u0935\u093e\u0917\u0924 \u0939\u0948",
+    "dash.active.camps":    "\u0938\u0915\u094d\u0930\u093f\u092f \u0905\u092d\u093f\u092f\u093e\u0928",
+    "dash.total.apps":      "\u0915\u0941\u0932 \u0906\u0935\u0947\u0926\u0928",
+    "dash.total.spent":     "\u0915\u0941\u0932 \u0916\u0930\u094d\u091a",
+    "dash.approval.rate":   "\u0905\u092a\u094d\u0930\u0942\u0935\u0932 \u0926\u0930",
+    "dash.total.earned":    "\u0915\u0941\u0932 \u0915\u092e\u093e\u0908",
+    "dash.pending.apps":    "\u0932\u0902\u092c\u093f\u0924 \u0906\u0935\u0947\u0926\u0928",
+    "dash.approved.subs":   "\u0905\u092a\u094d\u0930\u0942\u0935 \u0938\u092c\u092e\u093f\u0936\u0928",
+    "dash.rank":            "\u0932\u0940\u0921\u0930\u092c\u094b\u0930\u094d\u0921 \u0930\u0948\u0902\u0915",
 
     // Forms
-    "form.name":            "पूरा नाम",
-    "form.email":           "ईमेल पता",
-    "form.password":        "पासवर्ड",
-    "form.confirm":         "पासवर्ड की पुष्टि करें",
-    "form.company":         "कंपनी का नाम",
-    "form.industry":        "उद्योग",
-    "form.website":         "वेबसाइट (वैकल्पिक)",
-    "form.gst":             "GST नंबर (वैकल्पिक)",
-    "form.username":        "क्रिएटर यूज़रनेम",
-    "form.niche":           "कंटेंट निच",
-    "form.instagram":       "Instagram हैंडल",
-    "form.youtube":         "YouTube चैनल",
-    "form.josh":            "Josh हैंडल",
-    "form.sharechat":       "ShareChat हैंडल",
-    "form.followers":       "कुल फॉलोअर्स",
-    "form.city":            "शहर",
-    "form.state":           "राज्य",
-    "form.bio":             "बायो",
-    "form.title":           "अभियान शीर्षक",
-    "form.desc":            "विवरण",
-    "form.platform":        "प्लेटफ़ॉर्म",
-    "form.category":        "श्रेणी",
-    "form.budget":          "कुल बजट (₹)",
-    "form.reward":          "प्रति क्रिएटर इनाम (₹)",
-    "form.max":             "अधिकतम क्रिएटर",
-    "form.deadline":        "आवेदन की अंतिम तिथि",
-    "form.content.link":    "कंटेंट URL / पोस्ट लिंक",
-    "form.platform.posted": "पोस्ट किया गया प्लेटफ़ॉर्म",
+    "form.name":            "\u092a\u0942\u0930\u093e \u0928\u093e\u092e",
+    "form.email":           "\u0908\u092e\u0947\u0932 \u092a\u0924\u093e",
+    "form.password":        "\u092a\u093e\u0938\u0935\u0930\u094d\u0921",
+    "form.confirm":         "\u092a\u093e\u0938\u0935\u0930\u094d\u0921 \u0915\u0940 \u092a\u0941\u0937\u094d\u091f\u093f \u0915\u0930\u0947\u0902",
+    "form.company":         "\u0915\u0902\u092a\u0928\u0940 \u0915\u093e \u0928\u093e\u092e",
+    "form.industry":        "\u0909\u0926\u094d\u092f\u094b\u0917",
+    "form.website":         "\u0935\u0947\u092c\u0938\u093e\u0907\u091f (\u0935\u0948\u0915\u0932\u094d\u092a\u093f\u0915)",
+    "form.gst":             "GST \u0928\u0902\u092c\u0930 (\u0935\u0948\u0915\u0932\u094d\u092a\u093f\u0915)",
+    "form.username":        "\u0915\u094d\u0930\u093f\u090f\u091f\u0930 \u092f\u0942\u091c\u093c\u0930\u0928\u0947\u092e",
+    "form.niche":           "\u0915\u0902\u091f\u0947\u0902\u091f \u0928\u093f\u091a",
+    "form.instagram":       "Instagram \u0939\u0948\u0902\u0921\u0932",
+    "form.youtube":         "YouTube \u091a\u0948\u0928\u0932",
+    "form.josh":            "Josh \u0939\u0948\u0902\u0921\u0932",
+    "form.sharechat":       "ShareChat \u0939\u0948\u0902\u0921\u0932",
+    "form.followers":       "\u0915\u0941\u0932 \u092b\u0949\u0932\u094b\u0905\u0930\u094d\u0938",
+    "form.city":            "\u0936\u0939\u0930",
+    "form.state":           "\u0930\u093e\u091c\u094d\u092f",
+    "form.bio":             "\u092c\u093e\u092f\u094b",
+    "form.title":           "\u0905\u092d\u093f\u092f\u093e\u0928 \u0936\u0940\u0930\u094d\u0937\u0915",
+    "form.desc":            "\u0935\u093f\u0935\u0930\u0923",
+    "form.platform":        "\u092a\u094d\u0932\u0947\u091f\u092b\u093c\u0949\u0930\u094d\u092e",
+    "form.category":        "\u0936\u094d\u0930\u0947\u0923\u0940",
+    "form.budget":          "\u0915\u0941\u0932 \u092c\u091c\u091f (\u20b9)",
+    "form.reward":          "\u092a\u094d\u0930\u0924\u093f \u0915\u094d\u0930\u093f\u090f\u091f\u0930 \u0907\u0928\u093e\u092e (\u20b9)",
+    "form.max":             "\u0905\u0927\u093f\u0915\u0924\u092e \u0915\u094d\u0930\u093f\u090f\u091f\u0930",
+    "form.deadline":        "\u0906\u0935\u0947\u0926\u0928 \u0915\u0940 \u0905\u0902\u0924\u093f\u092e \u0924\u093f\u0925\u093f",
+    "form.content.link":    "\u0915\u0902\u091f\u0947\u0902\u091f URL / \u092a\u094b\u0938\u094d\u091f \u0932\u093f\u0902\u0915",
+    "form.platform.posted": "\u092a\u094b\u0938\u094d\u091f \u0915\u093f\u092f\u093e \u0917\u092f\u093e \u092a\u094d\u0932\u0947\u091f\u092b\u093c\u0949\u0930\u094d\u092e",
     "form.upi":             "UPI ID",
-    "form.feedback":        "फीडबैक (वैकल्पिक)",
+    "form.feedback":        "\u092b\u0940\u0921\u092c\u0948\u0915 (\u0935\u0948\u0915\u0932\u094d\u092a\u093f\u0915)",
 
     // Misc
-    "payout.coming":      "भुगतान जल्द आएगा",
-    "no.campaigns":       "कोई अभियान नहीं मिला।",
-    "no.apps":            "अभी तक कोई आवेदन नहीं।",
-    "no.rewards":         "अभी तक कोई इनाम नहीं।",
-    "filter.platform":    "प्लेटफ़ॉर्म से फ़िल्टर करें",
-    "filter.category":    "श्रेणी से फ़िल्टर करें",
-    "filter.min.reward":  "न्यूनतम इनाम (₹)",
-    "filter.sort":        "क्रमबद्ध करें",
-    "sort.newest":        "नवीनतम पहले",
-    "sort.highest":       "सबसे ज़्यादा इनाम",
-    "leaderboard.title":  "शीर्ष क्रिएटर लीडरबोर्ड",
-    "leaderboard.rank":   "रैंक",
-    "leaderboard.creator":"क्रिएटर",
-    "leaderboard.city":   "शहर",
-    "leaderboard.niche":  "निच",
-    "leaderboard.earned": "कुल कमाई",
-    "leaderboard.approved":"अप्रूव पोस्ट",
+    "payout.coming":      "\u092d\u0941\u0917\u0924\u093e\u0928 \u091c\u0932\u094d\u0926 \u0906\u090f\u0917\u093e",
+    "no.campaigns":       "\u0915\u094b\u0908 \u0905\u092d\u093f\u092f\u093e\u0928 \u0928\u0939\u0940\u0902 \u092e\u093f\u0932\u093e\u0964",
+    "no.apps":            "\u0905\u092d\u0940 \u0924\u0915 \u0915\u094b\u0908 \u0906\u0935\u0947\u0926\u0928 \u0928\u0939\u0940\u0902\u0964",
+    "no.rewards":         "\u0905\u092d\u0940 \u0924\u0915 \u0915\u094b\u0908 \u0907\u0928\u093e\u092e \u0928\u0939\u0940\u0902\u0964",
+    "filter.platform":    "\u092a\u094d\u0932\u0947\u091f\u092b\u093c\u0949\u0930\u094d\u092e \u0938\u0947 \u092b\u093c\u093f\u0932\u094d\u091f\u0930 \u0915\u0930\u0947\u0902",
+    "filter.category":    "\u0936\u094d\u0930\u0947\u0923\u0940 \u0938\u0947 \u092b\u093c\u093f\u0932\u094d\u091f\u0930 \u0915\u0930\u0947\u0902",
+    "filter.min.reward":  "\u0928\u094d\u092f\u0942\u0928\u0924\u092e \u0907\u0928\u093e\u092e (\u20b9)",
+    "filter.sort":        "\u0915\u094d\u0930\u092e\u092c\u0926\u094d\u0927 \u0915\u0930\u0947\u0902",
+    "sort.newest":        "\u0928\u0935\u0940\u0928\u0924\u092e \u092a\u0939\u0932\u0947",
+    "sort.highest":       "\u0938\u092c\u0938\u0947 \u091c\u093c\u094d\u092f\u093e\u0926\u093e \u0907\u0928\u093e\u092e",
+    "leaderboard.title":  "\u0936\u0940\u0930\u094d\u0937 \u0915\u094d\u0930\u093f\u090f\u091f\u0930 \u0932\u0940\u0921\u0930\u092c\u094b\u0930\u094d\u0921",
+    "leaderboard.rank":   "\u0930\u0948\u0902\u0915",
+    "leaderboard.creator":"\u0915\u094d\u0930\u093f\u090f\u091f\u0930",
+    "leaderboard.city":   "\u0936\u0939\u0930",
+    "leaderboard.niche":  "\u0928\u093f\u091a",
+    "leaderboard.earned": "\u0915\u0941\u0932 \u0915\u092e\u093e\u0908",
+    "leaderboard.approved":"\u0905\u092a\u094d\u0930\u0942\u0935 \u092a\u094b\u0938\u094d\u091f",
   }
 };
 
@@ -322,8 +322,20 @@ function animateCounters() {
       if (entry.isIntersecting) {
         const el     = entry.target;
         const target = parseInt(el.dataset.count, 10);
+        if (isNaN(target)) {
+          observer.unobserve(el);
+          return;
+        }
+
         const prefix = el.dataset.prefix || '';
         const suffix = el.dataset.suffix || '';
+
+        if (target <= 0) {
+          el.textContent = prefix + "0" + suffix;
+          observer.unobserve(el);
+          return;
+        }
+
         const duration = 1800;
         const step   = target / (duration / 16);
         let   current = 0;
@@ -338,12 +350,11 @@ function animateCounters() {
         observer.unobserve(el);
       }
     });
-  }, { threshold: 0.3 });
+  }, { threshold: 0.1 });
 
   counters.forEach(c => observer.observe(c));
 }
 
-// ============================================================
 // 5. CLIENT-SIDE FORM VALIDATION
 // ============================================================
 function setupFormValidation() {
@@ -435,8 +446,8 @@ function showAlert(message, type = 'info') {
 }
 
 function getAlertIcon(type) {
-  const icons = { error: '❌', success: '✅', info: 'ℹ️', warning: '⚠️' };
-  return icons[type] || 'ℹ️';
+  const icons = { error: '\u274c', success: '\u2705', info: '\u2139\ufe0f', warning: '\u26a0\ufe0f' };
+  return icons[type] || '\u2139\ufe0f';
 }
 
 // ============================================================
@@ -479,13 +490,13 @@ function setupSidebar() {
 // ============================================================
 function getPlatformIcon(platform) {
   const icons = {
-    'Instagram': '📸',
-    'YouTube':   '▶️',
-    'Josh':      '🎵',
-    'ShareChat': '💬',
-    'Moj':       '🎬'
+    'Instagram': '\u{1f4f8}',
+    'YouTube':   '\u25b6\ufe0f',
+    'Josh':      '\u{1f3b5}',
+    'ShareChat': '\u{1f4ac}',
+    'Moj':       '\u{1f3ac}'
   };
-  return icons[platform] || '📱';
+  return icons[platform] || '\u{1f4f1}';
 }
 
 function getPlatformClass(platform) {
@@ -500,7 +511,7 @@ function getPlatformClass(platform) {
 }
 
 // ============================================================
-// INIT — runs when DOM is ready
+// INIT \u2014 runs when DOM is ready
 // ============================================================
 document.addEventListener('DOMContentLoaded', function () {
   // Read saved language preference

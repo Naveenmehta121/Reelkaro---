@@ -1,0 +1,17 @@
+.env
+.env.local
+target/
+*.class
+*.log
+logs/
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+*.iml
+.vscode/
+.eclipse/
+*.project
+*.classpath
+*.settings/
+nbproject/
