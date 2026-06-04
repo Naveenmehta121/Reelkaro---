@@ -26,9 +26,11 @@ public class DBConnection {
     private static final String USER     = getEnv("DB_USER",     "root");
     private static final String PASSWORD = getEnv("DB_PASSWORD", "");
 
+    // Use SSL for cloud hosts (Aiven, Railway, etc.), disable only for localhost
+    private static final boolean IS_LOCAL = HOST.equals("localhost") || HOST.equals("127.0.0.1");
     private static final String JDBC_URL =
             "jdbc:mysql://" + HOST + ":" + PORT + "/" + DB_NAME
-            + "?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=Asia/Kolkata&characterEncoding=utf8";
+            + "?useSSL=" + (!IS_LOCAL) + "&allowPublicKeyRetrieval=true&serverTimezone=Asia/Kolkata&characterEncoding=utf8";
 
     // Static initializer: load the MySQL JDBC driver once when class loads
     static {
