@@ -258,6 +258,24 @@
 </section>
 
 <!-- ======================================================
+     CURVED LOOP MARQUEE — draggable animated band
+     SEO keywords: influencer marketing India, creator economy,
+     brand campaigns, monetize content, earn in INR
+     ====================================================== -->
+<section class="curved-loop-section" aria-label="Influencer marketing platform highlights">
+    <div
+      class="curved-loop-jacket"
+      data-text="Influencer Marketing ✦ Creator Economy India ✦ Brand Campaigns ✦ Earn in INR ✦ Monetize Content ✦ Josh · ShareChat · Moj ✦ Instagram Campaigns ✦ YouTube Collabs ✦"
+      data-speed="1.8"
+      data-curve="380"
+      data-direction="left"
+      data-interactive="true"
+      id="curvedLoopMain"
+      title="India's leading influencer marketing & creator economy platform"
+    ></div>
+</section>
+
+<!-- ======================================================
      PLATFORMS STRIP
      ====================================================== -->
 <section class="section-sm" style="background: var(--bg-surface); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
@@ -458,6 +476,13 @@
     </div>
 </footer>
 
+<script src="<%= request.getContextPath() %>/js/curved-loop.js"></script>
 <script src="<%= request.getContextPath() %>/js/main.js"></script>
+<script>
+  // Initialise CurvedLoop on all .curved-loop-jacket elements
+  document.addEventListener('DOMContentLoaded', function () {
+    CurvedLoop.initAll();
+  });
+</script>
 </body>
 </html>
