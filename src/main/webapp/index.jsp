@@ -162,11 +162,13 @@
     <div class="container">
         <div class="hero-grid">
             <div class="hero-content fade-in">
-                <div class="hero-eyebrow" data-i18n="hero.eyebrow">🇮🇳 India's #1 Creator Marketplace</div>
+                <div class="animated-gradient-text hero-eyebrow" data-colors="['#FF0055', '#7A00FF', '#00E5FF']" data-speed="5" data-border="true" data-i18n="hero.eyebrow">
+                    🇮🇳 India's #1 Creator Marketplace
+                </div>
 
                 <h1>
                     <span data-i18n="hero.title.part1">Where Brands Meet</span><br>
-                    <span class="text-gradient" data-i18n="hero.title.part2">India's Creators</span>
+                    <span class="animated-gradient-text" data-colors="['#FF0055', '#7A00FF', '#00E5FF', '#FF0055']" data-speed="6" data-direction="horizontal" data-yoyo="true" data-i18n="hero.title.part2" style="font-size: inherit; font-weight: inherit; letter-spacing: inherit; display: inline-block;">India's Creators</span>
                 </h1>
 
                 <p data-i18n="hero.desc">
@@ -477,11 +479,13 @@
 </footer>
 
 <script src="<%= request.getContextPath() %>/js/curved-loop.js"></script>
+<script src="<%= request.getContextPath() %>/js/gradient-text.js"></script>
 <script src="<%= request.getContextPath() %>/js/main.js"></script>
 <script>
-  // Initialise CurvedLoop on all .curved-loop-jacket elements
+  // Initialise widgets on DOMContentLoaded
   document.addEventListener('DOMContentLoaded', function () {
     CurvedLoop.initAll();
+    GradientText.initAll();
   });
 </script>
 </body>
