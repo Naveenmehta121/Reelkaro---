@@ -371,6 +371,99 @@
 </section>
 
 <!-- ======================================================
+     REELKARO FEATURES BENTO GRID
+     ====================================================== -->
+<section class="section">
+    <div class="container">
+        <div class="section-head text-center">
+            <span class="eyebrow">Features</span>
+            <h2>Powerful Features for Growth</h2>
+            <p>India's first automated clipping and influencer marketing portal built for scale</p>
+        </div>
+
+        <div class="card-grid bento-section"
+             data-text-auto-hide="false"
+             data-enable-stars="true"
+             data-enable-spotlight="true"
+             data-enable-border-glow="true"
+             data-enable-tilt="true"
+             data-enable-magnetism="true"
+             data-click-effect="true"
+             data-spotlight-radius="320"
+             data-particle-count="14"
+             data-glow-color="255, 0, 85"
+             style="margin-top: var(--sp-10);"
+        >
+            <!-- 1. Analytics -->
+            <div class="magic-bento-card particle-container">
+                <div class="magic-bento-card__header">
+                    <div class="magic-bento-card__label">Insights</div>
+                </div>
+                <div class="magic-bento-card__content">
+                    <h3 class="magic-bento-card__title">Campaign Analytics</h3>
+                    <p class="magic-bento-card__description">Track user engagement, reach, and clips across Instagram, YouTube, Josh, and Moj in real-time.</p>
+                </div>
+            </div>
+
+            <!-- 2. Dashboard -->
+            <div class="magic-bento-card particle-container">
+                <div class="magic-bento-card__header">
+                    <div class="magic-bento-card__label">Overview</div>
+                </div>
+                <div class="magic-bento-card__content">
+                    <h3 class="magic-bento-card__title">Central Dashboard</h3>
+                    <p class="magic-bento-card__description">A single hub to manage active submissions, creator reviews, and live payouts securely.</p>
+                </div>
+            </div>
+
+            <!-- 3. Collaboration -->
+            <div class="magic-bento-card particle-container">
+                <div class="magic-bento-card__header">
+                    <div class="magic-bento-card__label">Teamwork</div>
+                </div>
+                <div class="magic-bento-card__content">
+                    <h3 class="magic-bento-card__title">Seamless Collaboration</h3>
+                    <p class="magic-bento-card__description">Connect brands with creators directly. Manage chat logs, asset delivery, content guidelines, and approvals within one secure dashboard.</p>
+                </div>
+            </div>
+
+            <!-- 4. Automation -->
+            <div class="magic-bento-card particle-container">
+                <div class="magic-bento-card__header">
+                    <div class="magic-bento-card__label">Efficiency</div>
+                </div>
+                <div class="magic-bento-card__content">
+                    <h3 class="magic-bento-card__title">Smart Automation</h3>
+                    <p class="magic-bento-card__description">Instantly verify live campaign links and automate payout payouts once deliverables match brand criteria.</p>
+                </div>
+            </div>
+
+            <!-- 5. Integration -->
+            <div class="magic-bento-card particle-container">
+                <div class="magic-bento-card__header">
+                    <div class="magic-bento-card__label">Connectivity</div>
+                </div>
+                <div class="magic-bento-card__content">
+                    <h3 class="magic-bento-card__title">One-Click Assets</h3>
+                    <p class="magic-bento-card__description">Sync your media briefs, logo PNGs, hashtags, and sound templates directly for creator access.</p>
+                </div>
+            </div>
+
+            <!-- 6. Security -->
+            <div class="magic-bento-card particle-container">
+                <div class="magic-bento-card__header">
+                    <div class="magic-bento-card__label">Protection</div>
+                </div>
+                <div class="magic-bento-card__content">
+                    <h3 class="magic-bento-card__title">Secure Escrow Payouts</h3>
+                    <p class="magic-bento-card__description">Verify campaigns with escrowed amounts. Guaranteed TDS validation and automatic invoices in INR.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ======================================================
      FEATURED CATEGORIES
      ====================================================== -->
 <section class="section" style="background: var(--bg-surface); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
@@ -478,14 +571,17 @@
     </div>
 </footer>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 <script src="<%= request.getContextPath() %>/js/curved-loop.js"></script>
 <script src="<%= request.getContextPath() %>/js/gradient-text.js"></script>
+<script src="<%= request.getContextPath() %>/js/magic-bento.js"></script>
 <script src="<%= request.getContextPath() %>/js/main.js"></script>
 <script>
   // Initialise widgets on DOMContentLoaded
   document.addEventListener('DOMContentLoaded', function () {
     CurvedLoop.initAll();
     GradientText.initAll();
+    MagicBento.initAll();
   });
 </script>
 </body>
