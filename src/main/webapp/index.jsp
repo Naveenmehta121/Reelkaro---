@@ -53,7 +53,7 @@
             position: absolute;
             inset: 1px;
             border-radius: calc(var(--r-xl) - 1px);
-            background: #0e0e12;
+            background: var(--bg-surface, #1A1A1A);
             z-index: 1;
         }
         .cat-card:hover::before {
