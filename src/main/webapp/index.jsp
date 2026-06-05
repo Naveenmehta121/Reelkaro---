@@ -17,6 +17,87 @@
     <meta name="keywords" content="influencer marketing India, brand campaigns, creator monetization, Instagram campaigns India">
     <link rel="stylesheet" href="<%= request.getContextPath() %>/css/style.css">
     <style>
+        /* ── Category Cards ── */
+        .cat-card {
+            position: relative;
+            padding: var(--sp-5) var(--sp-4);
+            border-radius: var(--r-xl);
+            background: rgba(255,255,255,0.03);
+            border: 1px solid transparent;
+            background-clip: padding-box;
+            text-align: center;
+            cursor: default;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        /* Rotating conic gradient border */
+        .cat-card::before {
+            content: '';
+            position: absolute;
+            inset: -2px;
+            border-radius: inherit;
+            background: conic-gradient(
+                from var(--_a, 0deg),
+                transparent 40%,
+                rgba(255,255,255,0.55) 50%,
+                transparent 60%
+            );
+            animation: borderSpin 3.5s linear infinite;
+            z-index: 0;
+            opacity: 0;
+            transition: opacity 0.4s ease;
+        }
+        /* Inner fill to mask the conic BG */
+        .cat-card::after {
+            content: '';
+            position: absolute;
+            inset: 1px;
+            border-radius: calc(var(--r-xl) - 1px);
+            background: #0e0e12;
+            z-index: 1;
+        }
+        .cat-card:hover::before {
+            opacity: 1;
+        }
+        .cat-card:hover {
+            transform: translateY(-6px) scale(1.04);
+            box-shadow:
+                0 0 18px rgba(255,255,255,0.08),
+                0 12px 32px rgba(0,0,0,0.4);
+        }
+        .cat-card-inner {
+            position: relative;
+            z-index: 2;
+        }
+        .cat-card-dot {
+            display: inline-block;
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, rgba(255,255,255,0.7), rgba(255,255,255,0.25));
+            margin-bottom: var(--sp-3);
+            box-shadow: 0 0 8px rgba(255,255,255,0.3);
+        }
+        .cat-card-label {
+            font-size: 0.82rem;
+            font-weight: 600;
+            color: var(--text-secondary);
+            letter-spacing: 0.01em;
+            line-height: 1.35;
+            transition: color 0.3s ease;
+        }
+        .cat-card:hover .cat-card-label {
+            color: var(--text-primary);
+        }
+        @keyframes borderSpin {
+            to { --_a: 360deg; }
+        }
+        @property --_a {
+            syntax: '<angle>';
+            inherits: false;
+            initial-value: 0deg;
+        }
+        /* ── Hero Grid ── */
         .hero-grid {
             display: grid;
             grid-template-columns: 1.2fr 1fr;
@@ -476,19 +557,21 @@
 
         <div class="grid-4" style="margin-top:var(--sp-8);">
             <%
-                String[][] categories = {
-                    {"👗","Fashion & Lifestyle"},{"🍔","Food & Beverages"},
-                    {"💄","Beauty & Skincare"},{"🏋️","Health & Fitness"},
-                    {"📱","Tech & Gadgets"},{"✈️","Travel & Tourism"},
-                    {"🎮","Gaming & Esports"},{"🏠","Home & Decor"},
-                    {"💰","Fintech & Finance"},{"📚","Education & EdTech"},
-                    {"🧘","Wellness & Yoga"},{"🎵","Music & Entertainment"}
+                String[] categories = {
+                    "Fashion & Lifestyle", "Food & Beverages",
+                    "Beauty & Skincare",  "Health & Fitness",
+                    "Tech & Gadgets",     "Travel & Tourism",
+                    "Gaming & Esports",   "Home & Decor",
+                    "Fintech & Finance",  "Education & EdTech",
+                    "Wellness & Yoga",    "Music & Entertainment"
                 };
-                for (String[] cat : categories) {
+                for (String cat : categories) {
             %>
-            <div class="card text-center" style="padding:var(--sp-4);">
-                <div style="font-size:2rem;margin-bottom:var(--sp-2);"><%= cat[0] %></div>
-                <div style="font-size:0.85rem;font-weight:600;color:var(--text-secondary);"><%= cat[1] %></div>
+            <div class="cat-card">
+                <div class="cat-card-inner">
+                    <div class="cat-card-dot"></div>
+                    <div class="cat-card-label"><%= cat %></div>
+                </div>
             </div>
             <% } %>
         </div>
