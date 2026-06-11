@@ -16,13 +16,19 @@ SET DB_HOST=127.0.0.1
 SET DB_PORT=3306
 SET DB_NAME=reelkaro
 SET DB_USER=root
-SET DB_PASSWORD=
+SET "DB_PASSWORD="
 
 echo =====================================================
 echo  Step 1: Starting MySQL 8.4...
 echo =====================================================
-taskkill /F /IM mysqld.exe >nul 2>&1
-START "" /B "%MYSQL_BIN%\mysqld.exe" --datadir="%MYSQL_DATA%" --port=3306 --bind-address=0.0.0.0 --character-set-server=utf8mb4
+REM Try starting MySQL service (try common service names)
+net start MySQL >nul 2>&1
+IF ERRORLEVEL 1 net start MySQL84 >nul 2>&1
+IF ERRORLEVEL 1 net start MySQL80 >nul 2>&1
+IF ERRORLEVEL 1 (
+    echo Starting MySQL directly (no service found, trying direct start)...
+    START "MySQL Server" /B "%MYSQL_BIN%\mysqld.exe" --defaults-file="C:\ProgramData\MySQL\MySQL Server 8.4\my.ini"
+)
 timeout /t 8 /nobreak >nul
 
 echo Checking MySQL connection...

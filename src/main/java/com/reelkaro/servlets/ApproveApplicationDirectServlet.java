@@ -39,8 +39,13 @@ public class ApproveApplicationDirectServlet extends HttpServlet {
                 return;
             }
 
-            // Direct approve the application
-            applicationDAO.updateApplicationStatus(applicationId, "approved");
+            // Direct approve or reject the application
+            String action = req.getParameter("action");
+            if ("reject".equals(action)) {
+                applicationDAO.updateApplicationStatus(applicationId, "rejected");
+            } else {
+                applicationDAO.updateApplicationStatus(applicationId, "approved");
+            }
 
             resp.sendRedirect(req.getContextPath()
                     + "/brand/campaign-detail.jsp?id=" + campaignId + "&reviewed=true");

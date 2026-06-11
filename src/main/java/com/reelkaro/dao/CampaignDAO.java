@@ -26,8 +26,8 @@ public class CampaignDAO {
                                int maxCreators, String deadline) throws SQLException {
         String sql = "INSERT INTO campaigns " +
                      "(brand_id, title, description, platform, category, " +
-                     "budget_inr, reward_per_creator_inr, max_creators, deadline, status) " +
-                     "VALUES (?,?,?,?,?,?,?,?,?,?,'open')";
+                     "budget_inr, reward_per_creator_inr, max_creators, deadline) " +
+                     "VALUES (?,?,?,?,?,?,?,?,?)";
         try (Connection con = DBConnection.getConnection();
              PreparedStatement ps = con.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS)) {
             ps.setInt       (1, brandId);

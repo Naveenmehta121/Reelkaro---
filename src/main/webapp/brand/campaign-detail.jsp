@@ -127,21 +127,20 @@
                         <td><span class="badge badge-<%= app.getStatus() %>"><%= app.getStatus().toUpperCase() %></span></td>
                         <td>
                             <% if ("pending".equals(app.getStatus())) { %>
-                            <form method="post" action="<%= request.getContextPath() %>/ApproveReject" style="display:inline;">
-                                <input type="hidden" name="campaign_id" value="<%= campaign.getId() %>">
-                                <input type="hidden" name="submission_id" value="0">
-                                <input type="hidden" name="action" value="approve_application">
-                                <!-- Direct approve application by updating status -->
-                                <!-- We do this via a simplified approach using EditCampaign -->
-                            </form>
-                            <!-- Approve/Reject application status -->
-                            <form method="post" action="<%= request.getContextPath() %>/ApproveReject" style="display:inline;">
-                                <input type="hidden" name="campaign_id" value="<%= campaign.getId() %>">
-                                <input type="hidden" name="application_id" value="<%= app.getId() %>">
-                                <input type="hidden" name="action" value="approve">
-                                <input type="hidden" name="submission_id" value="0">
-                                <button type="submit" class="btn btn-success btn-sm" onclick="this.form.action='<%= request.getContextPath() %>/ApproveApplicationDirect';return true;">✓ Approve</button>
-                            </form>
+                            <div class="flex gap-2" style="flex-wrap:wrap;">
+                                <form method="post" action="<%= request.getContextPath() %>/ApproveApplicationDirect" style="display:inline;">
+                                    <input type="hidden" name="campaign_id"   value="<%= campaign.getId() %>">
+                                    <input type="hidden" name="application_id" value="<%= app.getId() %>">
+                                    <input type="hidden" name="action" value="approve">
+                                    <button type="submit" class="btn btn-success btn-sm">✓ Approve</button>
+                                </form>
+                                <form method="post" action="<%= request.getContextPath() %>/ApproveApplicationDirect" style="display:inline;">
+                                    <input type="hidden" name="campaign_id"   value="<%= campaign.getId() %>">
+                                    <input type="hidden" name="application_id" value="<%= app.getId() %>">
+                                    <input type="hidden" name="action" value="reject">
+                                    <button type="submit" class="btn btn-danger btn-sm">✗ Reject</button>
+                                </form>
+                            </div>
                             <% } else { %>
                             <span style="color:var(--text-muted);font-size:0.8rem;"><%= app.getStatus() %></span>
                             <% } %>

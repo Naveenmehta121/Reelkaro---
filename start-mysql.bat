@@ -22,17 +22,27 @@ if %ERRORLEVEL% EQU 0 (
     goto :done
 )
 
-REM Try to start via Windows service first
+REM Try to start via Windows service (try both common service names)
+net start MySQL >nul 2>&1
+if %ERRORLEVEL% EQU 0 (
+    echo MySQL service (MySQL) started successfully.
+    goto :done
+)
 net start MySQL84 >nul 2>&1
 if %ERRORLEVEL% EQU 0 (
-    echo MySQL service started successfully.
+    echo MySQL service (MySQL84) started successfully.
+    goto :done
+)
+net start MySQL80 >nul 2>&1
+if %ERRORLEVEL% EQU 0 (
+    echo MySQL service (MySQL80) started successfully.
     goto :done
 )
 
-REM If no service, try installing it (needs admin)
-echo Installing MySQL as a Windows service (requires Admin)...
-"%MYSQL_BIN%\mysqld.exe" --install MySQL84 --defaults-file="%MYSQL_INI%" 2>&1
-net start MySQL84 2>&1
+REM If no service running, start MySQL directly (needs admin)
+echo Starting MySQL directly (service not available)...
+start "MySQL Server" /B "%MYSQL_BIN%\mysqld.exe" --defaults-file="%MYSQL_INI%"
+timeout /t 8 /nobreak >nul
 
 if %ERRORLEVEL% NEQ 0 (
     echo.

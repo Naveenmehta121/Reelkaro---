@@ -30,12 +30,21 @@ public class DBConnection {
     private static final boolean IS_LOCAL = HOST.equals("localhost") || HOST.equals("127.0.0.1");
     private static final String JDBC_URL =
             "jdbc:mysql://" + HOST + ":" + PORT + "/" + DB_NAME
-            + "?useSSL=" + (!IS_LOCAL) + "&allowPublicKeyRetrieval=true&serverTimezone=Asia/Kolkata&characterEncoding=utf8";
+            + "?useSSL=" + (!IS_LOCAL)
+            + "&allowPublicKeyRetrieval=true"
+            + "&serverTimezone=Asia/Kolkata"
+            + "&characterEncoding=utf8"
+            + "&connectTimeout=5000"
+            + "&socketTimeout=30000"
+            + "&autoReconnect=true"
+            + "&failOverReadOnly=false";
 
     // Static initializer: load the MySQL JDBC driver once when class loads
     static {
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
+            System.out.println("[DBConnection] JDBC URL: " + JDBC_URL);
+            System.out.println("[DBConnection] User: " + USER + " | DB: " + DB_NAME + " | Host: " + HOST + ":" + PORT);
         } catch (ClassNotFoundException e) {
             throw new RuntimeException("MySQL JDBC Driver not found. "
                     + "Add mysql-connector-java.jar to WEB-INF/lib.", e);
